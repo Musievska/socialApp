@@ -7,6 +7,11 @@ const morgan = require('morgan');
 
 dotenv.config();
 
+mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true },
+    () => {
+    console.log('Connected to MongoDB');
+});
+
 app.listen(8800, () => {
     console.log('port 8800 is listening');
 });
