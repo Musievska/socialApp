@@ -1,0 +1,30 @@
+.leftbar{
+    flex: 3;
+    height: calc(100vh - 50px);
+    background-color: yellow;
+    overflow-y: scroll;
+    position: sticky;
+    top: 50px;
+}
+
+.leftbarWrapper{
+    padding: 20px;
+}
+
+.leftbarList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    list-style: none;
+}
+
+.leftbarListItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.leftbarIcons{
+    margin-right: 15px;
+}
+
