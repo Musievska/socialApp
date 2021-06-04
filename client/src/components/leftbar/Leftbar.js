@@ -71,7 +71,16 @@ function Leftbar() {
                             Courses
                         </span>
                     </li>
-
+                </ul>
+                <button className='leftbarButton'>
+                    Show More
+                </button>
+                <hr classname='leftbarHr' />
+                <ul className='leftbarFriendList'>
+                    <li className='leftbarFriend'>
+                        <img classname='leftbarFriendImg' src='/images/persons/donald.jpg' alt='' />
+                        <span className='leftbarFriendName'>ivan</span>
+                    </li>
                 </ul>
             </div>
         </div>
