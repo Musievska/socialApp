@@ -1,10 +1,12 @@
-import React from 'react';
+import SharePosts from '../sharePosts/SharePosts';
 import './feed.css';
 
 function Feed() {
     return (
         <div className='feed'>
-            feed
+            <div classname='feedWrapper'>
+                <SharePosts />
+            </div>
         </div>
     )
 }
