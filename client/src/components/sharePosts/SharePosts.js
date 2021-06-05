@@ -11,9 +11,8 @@ const SharePosts = () => {
         <div className='share'>
             <div className='shareWrapper'>
                 <div className='shareTop'>
-                    <img className='shareProfileImg' src='' alt='' />
+                    <img className='shareProfileImg' src='/images/persons/donald.jpg' alt='' />
                     <input placeholder='Share' className='shareInput'>
-
                     </input>
                 </div>
                 <hr className='shareHr' />
