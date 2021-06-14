@@ -1,25 +1,56 @@
-import React from 'react';
-import MoreIcon from '@material-ui/icons/More';
+import './post.css';
+import { MoreVert } from '@material-ui/icons';
+import { Users } from '../../DummyUsers';
+import { useState } from 'react';
 
-function Post() {
+function Post({ post }) {
+    const [like, setLike] = useState(post.like);
+    const [isLiked, setIsLiked] = useState(false);
+    const likeHandler = () => {
+        setLike(isLiked ? like - 1 : like + 1);
+        setIsLiked(!isLiked)
+    }
     return (
         <div className='post'>
             <div className='postWrapper'>
                 <div className='postTop'>
                     <div className='postTopLeft'>
-                        <img className='postProfileImg' src='' alt='' />
-                        <span className='postUsername'>Terry</span>
-                        <span className='postDate'>2 minutes ago</span>
+                        <img className='postProfileImg'
+                            src={Users.filter((x) => x.id === post?.userId)[0].profileImg}
+                            alt=''
+                        />
+                        <span className='postUsername'>
+                            {Users.filter((x) => x.id === post?.userId)[0].username}
+                        </span>
+                        <span className='postDate'>
+                            {post.date}
+                        </span>
                     </div>
                     <div className='postTopRight'>
-                        <MoreIcon/>
+                        <MoreVert />
                     </div>
                 </div>
-                <div className='postCenter'></div>
-                <div className='postBottom'></div>
+                <div className='postCenter'>
+                    <span className='postText'>
+                        {post.description}
+                    </span>
+                    <img className='postImg'
+                        src=
+                        {post.picture}
+                        alt='' />
+                </div>
+                <div className='postBottom'>
+                    <div className='postBottomLeft'>
+                        <img className='likeIcon' src='/images/like' onClick={likeHandler} alt='' />
+                        <span className='postLikeCounter'>{ like } people like it!</span>
+                    </div>
+                    <div className='postBottomRight'>
+                        <span className='postCommentText'>{ post.comment } comments</span>
+                    </div>
+                </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Post
