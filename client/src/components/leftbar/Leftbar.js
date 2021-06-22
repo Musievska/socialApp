@@ -75,10 +75,10 @@ function Leftbar() {
                 <button className='leftbarButton'>
                     Show More
                 </button>
-                <hr classname='leftbarHr' />
+                <hr className='leftbarHr' />
                 <ul className='leftbarFriendList'>
                     <li className='leftbarFriend'>
-                        <img classname='leftbarFriendImg' src='/images/persons/donald.jpg' alt='' />
+                        <img className='leftbarFriendImg' src='/images/persons/donald.jpg' alt='' />
                         <span className='leftbarFriendName'>ivan</span>
                     </li>
                 </ul>

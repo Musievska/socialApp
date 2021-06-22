@@ -10,7 +10,7 @@ const Topbar = () => {
             </div>
             <div className='topbarCenter'>
                 <div className='searchBar'>
-                    <Search classname='searchIcon' />
+                    <Search className='searchIcon' />
                     <input placeholder='Search in Social App' className='searchInput' />
                 </div>
             </div>

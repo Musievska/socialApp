@@ -16,7 +16,7 @@ const Register = () => {
                         <input placeholder='Email' className='loginInput'></input>
                         <input placeholder='Password' className='loginInput'></input>
                         <input placeholder='Repeat Password' className='loginInput'></input>
-                        <button classname='loginButton'>
+                        <button className='loginButton'>
                             Sign Up
                             </button>
                         <button className='loginAccountButton'>

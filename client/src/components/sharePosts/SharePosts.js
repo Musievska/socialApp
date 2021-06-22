@@ -19,11 +19,11 @@ const SharePosts = () => {
                 <div className='shareBottom'>
                     <div className='shareOptions'>
                         <div className='shareSingleOption'>
-                            <PermMedia htmlColor='tomato' classname='shareIcon' />
+                            <PermMedia htmlColor='tomato' className='shareIcon' />
                             <span className='shareOptionContext'>photo or video</span>
                         </div>
                         <div className='shareSingleOption'>
-                            <Label htmlColor='blue' classname='shareIcon' />
+                            <Label htmlColor='blue' className='shareIcon' />
                             <span className="shareOptionContext">Tag</span>
                         </div>
                         <div className='shareSingleOption'>
