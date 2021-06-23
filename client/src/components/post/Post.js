@@ -18,7 +18,7 @@ function Post({ post }) {
                 <div className='postTop'>
                     <div className='postTopLeft'>
                         <img className='postProfileImg'
-                            src={Users.filter((x) => x.id === post?.userId)[0].profileImg}
+                            src={PublicFolder+(Users.filter((x) => x.id === post?.userId)[0].profileImg)}
                             alt=''
                         />
                         <span className='postUsername'>

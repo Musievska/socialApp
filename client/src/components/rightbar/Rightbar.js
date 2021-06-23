@@ -9,13 +9,13 @@ const PublicFolder = process.env.REACT_APP_PUBLIC_FOLDER;
         return (
             <>
                 <div className="birthdayContainer">
-                    <img className="birthdayImg" src="images/gift.png" alt="" />
+                    <img className="birthdayImg" src={PublicFolder + "birthday.png"} alt="" />
                     <span className="birthdayText">
                         Mimi has a birhday today.
           </span>
                 </div>
                 <img className="rightbarAd"
-                    src="images/ad.png"
+                    src={PublicFolder+"ad.jpg"}
                     alt="" />
                 <h4 className="rightbarTitle">Online Friends</h4>
                 <ul className="rightbarFriendList">
