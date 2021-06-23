@@ -3,6 +3,8 @@ import { Users } from "../../DummyUsers";
 import Online from "../online/Online";
 
 function Rightbar({ profile }) {
+const PublicFolder = process.env.REACT_APP_PUBLIC_FOLDER;
+
     const HomeRightbar = () => {
         return (
             <>
@@ -12,7 +14,9 @@ function Rightbar({ profile }) {
                         Mimi has a birhday today.
           </span>
                 </div>
-                <img className="rightbarAd" src="images/ad.png" alt="" />
+                <img className="rightbarAd"
+                    src="images/ad.png"
+                    alt="" />
                 <h4 className="rightbarTitle">Online Friends</h4>
                 <ul className="rightbarFriendList">
                     {Users.map((u) => (
@@ -45,7 +49,7 @@ function Rightbar({ profile }) {
                 <div className="rightbarFollowings">
                     <div className="rightbarFollowing">
                         <img
-                            src="assets/person/1.jpeg"
+                            src={PublicFolder + 'persons/terry.jpg'}
                             alt=""
                             className="rightbarFollowingImg"
                         />
@@ -53,7 +57,7 @@ function Rightbar({ profile }) {
                     </div>
                     <div className="rightbarFollowing">
                         <img
-                            src="assets/person/2.jpeg"
+                            src={PublicFolder+'persons/donald.jpg'}
                             alt=""
                             className="rightbarFollowingImg"
                         />

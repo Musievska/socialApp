@@ -7,6 +7,8 @@ import Rightbar from '../../components/rightbar/Rightbar';
 
 
 function Profile() {
+    const PublicFolder = process.env.REACT_APP_PUBLIC_FOLDER;
+
     return (
         <>
             <Topbar />
@@ -17,12 +19,12 @@ function Profile() {
                         <div className='profileCover'>
                             <img
                                 className='profileCoverImg'
-                                src='images/persons/terry.jpg'
+                                src={PublicFolder+'persons/terry.jpg'}
                                 alt=''
                             />
                             <img
                                 className='profileUserImg'
-                                src='images/persons/terry.jpg'
+                                src={PublicFolder+'persons/terry.jpg'}
                                 alt=''
                             />
                         </div>
