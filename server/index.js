@@ -20,13 +20,13 @@ app.use(express.json());
 app.use(helmet());
 app.use(morgan('common'));
 
-app.use('/api/users', userRoutes);
-app.use('/api/auth', authRoutes);
-app.use('api/posts', postRoutes);
+app.use('/server/users', userRoutes);
+app.use('/server/auth', authRoutes);
+app.use('server/posts', postRoutes);
 
 
-app.get('/', (req, res) => {
-    res.send('Homepage')
+app.get('/style.css', (req, res) => {
+    res.sendFile(__dirname + '/public' + 'style.css')
 });
 
 app.listen(8800, () => {
